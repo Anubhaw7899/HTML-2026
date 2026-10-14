@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table,th,td{
+            border: 2px solid black;
+        }
+        th,td{
+            padding: 15px;
+            text-align: left;
+        }
+        th{
+            background-color: #f3b7b7;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML Table -->
+     <table>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Anubhaw</td>
+            <td>Singh</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>Anjali</td>
+            <td>Dubey</td>
+            <td>26</td>
+        </tr>
+     </table>
+
+     <!-- Nested HTML Table -->
+      <br><br>
+      <hr>
+      <br>
+      <table>
+        <tr>
+            <th>FirsName</th>
+            <th>LastName</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Anubhaw</td>
+            <td>Singh</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>Anjali</td>
+            <td>Dubey</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Anubhaw</td>
+                        <td>Singh</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>Anjali</td>
+                        <td>Dubey</td>
+                        <td>26</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+      </table>
+</body>
+</html>
