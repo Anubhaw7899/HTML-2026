@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(158, 207, 247);
+            width: 100%;
+        }
+        h2{
+            text-align: center;
+        }
+
+        form {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+            width: 50%;
+            margin: 3rem 0;
+            transform: translateX(50%);
+        }
+
+        .field-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: auto;
+            flex: 1 1 calc(50% - 10px);
+            min-width: 140px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HTML forms , input, radio, checkbox and textarea -->
+    <form>
+        <h2>HTML Forms</h2>
+        <!-- Name -->
+        <div class="field-section">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <!-- Phone -->
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="123-456-7890" maxlength="12" required
+                    oninput="let n=this.value.replace(/\D/g,''); this.value=n.length>6?`${n.slice(0,3)}-${n.slice(3,6)}-${n.slice(6,10)}`:n.length>3?`${n.slice(0,3)}-${n.slice(3,6)}`:n;">
+            </div>
+            <!-- Gender -->
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <!-- <div class="gender-group"> -->
+                <span for="gender"><input type="radio" id="male" name="gender" value="male">Male</span>
+                <span for="gender"><input type="radio" id="female" name="gender" value="female">Female</span>
+                <!-- </div> -->
+            </div>
+            <!-- Hobbies -->
+            <div class="form-group">
+                <label for="hobbies">Hobbies</label>
+                <!-- <div class="hobbies-options"> -->
+                <span for="hobbies"><input type="checkbox" id="reading" name="hobbies" value="reading">Reading</span>
+                <span for="hobbies"><input type="checkbox" id="traveling" name="hobbies"
+                        value="traveling">Traveling</span>
+                <span for="hobbies"><input type="checkbox" id="cooking" name="hobbies" value="cooking">Cooking</span>
+                <!-- </div> -->
+            </div>
+            <!-- Country -->
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                    <option value="australia">Australia</option>
+                </select>
+            </div>
+            <!-- Message -->
+            <div class="form-group">
+                <label for="message">Feedback</label>
+                <textarea id="message" name="message" rows="8" cols="50"></textarea>
+            </div>
+
+            <!-- File Upload -->
+            <div class="form-group">
+                <label for="file">Upload File</label>
+                <input type="file" id="file" name="file" accept=".pdf,.doc,.docx">
+            </div>
+        </div>
+
+        <!-- Submit -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
