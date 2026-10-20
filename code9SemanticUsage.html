@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog with Semantic tags</title>
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(158, 207, 247);
+            width: 100%;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 1em;
+            margin-top: 1em;
+            width: 100%;
+            /* background-color: #c0bbbb; */
+        }
+
+        article {
+            padding: 1em;
+            /* background-color: #c0bbbb; */
+        }
+
+        aside {
+            background-color: #ffff;
+            padding: 1em;
+            width: 15em;
+            text-align: left;
+            margin-left: 1em;
+            margin-right: 1em;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .left-nav {
+            margin-right: 1em;
+            margin-left: 1em;
+        }
+
+        .left-nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        section main {
+            background-color: #ffff;
+            padding: 1em;
+            border-radius: 5px;   
+        }
+        section main article {
+            background-color: #dfdddd;
+            border-radius: 5px;
+            margin: 1em 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Blog with Semantic tags   -->
+    <!-- header -->
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main content -->
+    <section>
+        <aside class="left-nav">
+            <h3>Anubhaw Thrives</h3>
+            <ul>
+                <li>Development</li>
+                <li>Design</li>
+                <li>Programming</li>
+            </ul>
+        </aside>
+        <main>
+            <article>
+                <h2>Blog Post Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </article>
+            <article>
+                <h2>Another Blog Post</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </article>
+            <article>
+                <h2>Yet Another Blog Post</h2>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.</p>
+            </article>
+        </main>
+        <!-- sidebar with asides -->
+        <aside>
+            <h3>About Me</h3>
+            <p>I am a blogger who loves to write about technology and programming.</p>
+        </aside>
+    </section>
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2026 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

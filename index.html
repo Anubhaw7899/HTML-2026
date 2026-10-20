@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Accessible header area -->
+    <header class="main-header" role="banner">
+        <div class="logo-container">
+            <!-- Center logo with accessible alt text -->
+            <a href="#" aria-label="Dashboard Home">
+                <img src="./images/deloitte3.jpg" alt="Company Logo" class="logo">
+            </a>
+        </div>
+
+        <!-- Semantic and accessible navigation -->
+        <nav class="main-nav" aria-label="Primary Navigation">
+            <ul class="nav-list">
+                <li><a href="./code1.html" aria-current="page">Overview</a></li>
+                <li><a href="./code2Tags.html">Tags</a></li>
+                <li><a href="./code3InlineBlock.html">Block and Inline</a></li>
+                <li><a href="./code4Table.html">Table</a></li>
+                <li><a href="./code5Lists.html">Lists</a></li>
+                <li><a href="./code6Semantics.html">Semantic Tags</a></li>
+                <li><a href="./code7ImageMultimedia.html">Image and Figures</a></li>
+                <li><a href="./code10Forms.html">Forms</a></li>
+                <li><a href="./code11AccessibilitySEO.html">Accessibility and SEO</a></li>
+                <li><a href="./code12EmbedMedia.html">Embedded Media</a></li>
+                <li><a href="./code13Geolocation.html">Geaolocation</a></li>
+                <li><a href="./code14LocalStorage.html">LocalStorage</a></li>
+                <li><a href="./code15Canvas.html">Canvas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Grid Layout -->
+    <main class="dashboard-content" id="main-content" role="main">
+        <h1 class="visually-hidden">Dashboard Overview</h1>
+
+        <section class="card-section" aria-labelledby="html-origins-title">
+            <article class="card">
+                <h2 id="html-origins-title">The Origins of HTML</h2>
+                <p>
+                    <strong>HyperText Markup Language (HTML)</strong> was first created by physicist <strong>Tim
+                        Berners-Lee in 1989</strong> while working at CERN. It was officially released to the public in
+                    1991 as a simple system to allow researchers to share documents and link them together
+                    electronically. Over the last few decades, HTML has evolved from a basic text-tagging tool into the
+                    robust structural foundation of the modern World Wide Web.
+                </p>
+            </article>
+
+            <article class="card" aria-labelledby="html-popularity-title">
+                <h2 id="html-popularity-title">Why HTML Remains Popular</h2>
+                <p>
+                    HTML is universally popular because it acts as the irreplaceable, open-standard backbone of the
+                    internet, supported natively by every modern web browser. Its longevity stems from its
+                    straightforward syntax, vast ecosystem, and continuous evolution through the World Wide Web
+                    Consortium (W3C). Features like semantic elements and native accessibility support ensure developers
+                    can build structured, inclusive web experiences efficiently.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Anubhaw Singh HTML &copy;2026</p>
+    </footer>
+
+</body>
+
+</html>

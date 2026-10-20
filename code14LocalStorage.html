@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+
+<body>
+    <!--HTML5 Local Storage Example  -->
+    <h1>Local Storage</h1>
+    <label for="name">Name</label><br>
+    <input type="text" placeholder="Enter Your Name" id="name">
+    <br><br>
+    <button onclick="saveData()">Save</button>
+    <button onclick="showData()">Show</button>
+    <p id="result"></p>
+    <script>
+        saveData = () => {
+            var name = document.getElementById('name').value;
+            localStorage.setItem('name', name);
+            document.getElementById('name').value = '';
+        }
+
+        showData = () => {
+            var name = localStorage.getItem('name');
+            document.getElementById('result').innerHTML = 'Your Name is: ' + name;
+        }
+    </script>
+</body>
+
+</html>
