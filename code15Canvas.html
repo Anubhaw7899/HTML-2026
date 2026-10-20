@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas in HTML5</title>
+</head>
+
+<body>
+    <!-- 
+        The <canvas> element in HTM is used to draw graphics on a web page.
+        It provides an area (or canvas) for rendering graphics, including shapes, images, text and other objects, using Javascript
+    -->
+    <h1>Canvas HTML example</h1>
+    <canvas id="myCanvas" width="200" height="100" style="border: 1px solid #000000;"></canvas>
+    <script>
+        var c = document.getElementById('myCanvas');
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = '#ff0000';
+        ctx.fillRect(5, 5, 175, 75);
+
+        // Draw blue line
+        ctx.beginPath();
+        ctx.moveTo(0, 10);
+        ctx.lineTo(150, 90);
+        ctx.strokeStyle = '#0000ff';
+        ctx.lineWidth = 4;
+        ctx.stroke(); 
+    </script>
+</body>
+
+</html>
